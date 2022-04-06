@@ -1,0 +1,498 @@
+    @font-face {
+        font-family: "Spiderman";
+        src: url("../font/FFHC/Typo-FarFromHomecoming.otf") format("opentype");
+    }
+    
+    @font-face {
+        font-family: "Montserrat";
+        src: url("../font/Montserrat/Montserrat-VariableFont_wght.ttf");
+    }
+    
+     :root {
+        --color-red: #b11313;
+        --color-yellow: #f1c530;
+        --color-blue: #114c92;
+    }
+    /*********** SHARED STYLES *****************/
+    
+    body {
+        color: white;
+        font-family: "Montserrat", sans-serif;
+    }
+    /* BACKGROUND-COLOR */
+    
+    .bg-red {
+        background-color: var(--color-red);
+    }
+    
+    .bg-yellow {
+        background-color: var(--color-yellow);
+    }
+    
+    .bg-blue {
+        background-color: var(--color-blue);
+    }
+    /* text-color */
+    
+    .text-red {
+        color: var(--color-red);
+    }
+    
+    .text-yellow {
+        color: var(--color-yellow);
+    }
+    
+    .text-blue {
+        color: var(--color-blue);
+    }
+    
+    .text-justify {
+        text-align: justify;
+        text-justify: distribute-all-lines;
+    }
+    
+    .font-spider {
+        font-family: "Spiderman", sans-serif;
+    }
+    
+    .mybtn {
+        margin: auto;
+        min-width: 10rem;
+        width: fit-content;
+        border-radius: 1rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+    
+    input.form-control {
+        margin-top: 1rem;
+        border-radius: 1rem;
+    }
+    
+    .py-25 {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    /* HEADER AND FOOTER*/
+    
+    header {
+        position: absolute;
+        top: 0rem;
+        width: 100%;
+    }
+    
+    header .navbar-brand {
+        margin: 0;
+        padding: 0;
+        height: 2rem;
+    }
+    
+    .navbar-brand img {
+        height: 100%;
+    }
+    
+    .navbar-toggler-icon {
+        /* Redefine bs5 navbar-toggler-icon*/
+        background-image: url("dots.svg");
+    }
+    
+    .collapse {
+        background-color: black;
+    }
+    
+    .collapse li {
+        text-align: right;
+        padding-right: 2rem;
+        border-bottom: 1px solid white;
+    }
+    /* Icon size */
+    
+    .is-1 {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    
+    .footer-nav {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .form-select {
+        /* redefine bs5 Form form-select*/
+        color: white;
+        border-radius: 1rem;
+        border: 2px solid white;
+        background-image: url("select-arrow.svg") !important;
+    }
+    
+    dl dt,
+    dl dd {
+        display: inline;
+    }
+    
+    dl dd::after {
+        content: "\a";
+        white-space: pre-line;
+    }
+    
+    .card {
+        border: none;
+        background-color: inherit;
+    }
+    
+    footer .nav-item .nav-link {
+        margin-bottom: 0.5rem;
+    }
+    
+    footer .nav-item .nav-link,
+    header .nav-item .nav-link {
+        /*redefine bs5 nav-item|link*/
+        margin: 0;
+        color: white;
+        font-weight: 700;
+    }
+    
+    footer .nav-item:hover .nav-link,
+    header .nav-item:hover .nav-link {
+        color: gray;
+    }
+    
+    footer a.nav-link {
+        padding: 0.5rem 0.5rem;
+    }
+    /* The top big title with backgroud image*/
+    
+    .main-title {
+        display: flex;
+        min-height: 40vw;
+        max-height: 150px;
+        padding-top: 5rem;
+        align-items: center;
+        height: auto !important;
+        background-repeat: no-repeat;
+    }
+    
+    .main-title h1.title-1 {
+        font-size: 5vw;
+        font-family: "Spiderman", sans-serif;
+    }
+    
+    .main-title .subtitle {
+        font-size: 2.5vw;
+        font-weight: bold;
+    }
+    /***************************************** HOME index.html **************************************/
+    
+    #spiderman {
+        background-size: 100% 100%;
+        background-image: url("../img/Illustration/img1.png");
+    }
+    
+    #spiderCine img {
+        margin: auto;
+        height: auto;
+        display: block;
+        max-width: 100%;
+    }
+    
+    #spiderCine p {
+        text-align: center;
+    }
+    
+    #spiderCine ul {
+        margin: auto;
+        display: block;
+        width: fit-content;
+    }
+    
+    #spiderCine ul li {
+        text-align: center;
+    }
+    
+    #become-spider {
+        background-size: contain;
+        background-position-x: left;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-color: var(--color-blue);
+        background-image: url("../img/Illustration/img5.png");
+    }
+    
+    #become-spider input[type="text"],
+    #become-spider input[type="email"] {
+        border: 2px solid black
+    }
+    
+    #become-spider input[type="text"]::placeholder,
+    #become-spider input[type="email"]::placeholder {
+        color: black;
+    }
+    
+    #newsletter {
+        min-height: 30vw;
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-image: url("../img/Illustration/img6.png");
+    }
+    
+    #newsletter input[type="text"],
+    #newsletter input[type="email"] {
+        border: 2px solid white;
+    }
+    
+    #newsletter input[type="text"]::placeholder,
+    #newsletter input[type="email"]::placeholder {
+        color: white
+    }
+    
+    #newsletter .form-check {
+        margin-top: 1rem;
+    }
+    /**********************************************************  ADVERSAIRE *****************************/
+    
+    #vilin {
+        background-size: 100% 100%;
+        background-image: url("../img/Illustration/img7.png");
+    }
+    /* redefine .card and .card-body for adversaire*/
+    
+    #adversaire .card {
+        padding: 2rem;
+    }
+    
+    #adversaire .card-body {
+        color: black;
+        padding: 2rem;
+        border-radius: 0 0 2rem 2rem;
+        border-left: 0.5rem solid rgba(0, 0, 0, 0.8);
+        border-right: 0.5rem solid rgba(0, 0, 0, 0.8);
+        border-bottom: 0.5rem solid rgba(0, 0, 0, 0.8);
+        box-shadow: 0.1rem 0.15rem 0.5rem rgba(0, 0, 0, 0.8);
+    }
+    /****************************** A PROPOS about.html *********************************************/
+    
+    #laToile {
+        background-size: contain;
+        background-position: right;
+        background-color: var(--color-yellow);
+        background-image: url("../img/Illustration/img5alt.png");
+    }
+    
+    #antenne input,
+    #antenne textarea {
+        border: 2px solid white;
+    }
+    
+    #antenne textarea {
+        margin-top: 2rem;
+        border-radius: 1rem;
+    }
+    
+    #antenne input::placeholder,
+    #antenne textarea::placeholder {
+        color: white;
+    }
+    /************************************* HERO *************************************************************/
+    
+    iframe {
+        /*
+        width: 100%;
+        height: auto;
+        min-height: 20vw; */
+        width: 100%;
+        border: none;
+        aspect-ratio: 16/9;
+    }
+    
+    #unHero {
+        background-size: cover;
+        background-image: url("../img/Illustration/img19.png");
+    }
+    
+    #fondation {
+        width: 100%;
+        min-height: 30vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../img/Illustration/img20.png");
+    }
+    
+    #fondation>div {
+        top: 10vw;
+        position: relative;
+    }
+    
+    #fondation p {
+        font-size: 2.5vw;
+        font-weight: bold;
+    }
+    
+    #amis1,
+    #amis2 {
+        padding: 0.5rem;
+        width: 60%;
+        margin: auto;
+        display: block;
+    }
+    
+    #lesFilles {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    #lesFilles img {
+        width: 30%;
+    }
+    
+    #avengers {
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-color: var(--color-red);
+        background-image: url("../img/Illustration/img32.png");
+    }
+    
+    #univers {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../img/Illustration/img33.png");
+    }
+    
+    .bg-transparent-blue {
+        background-color: rgba(17, 75, 146, 0.6);
+    }
+    /***************************************  BATMAN bonus.html *************************/
+    
+    #batman {
+        background-size: 100% 100%;
+        background-image: url("../img/Illustration/img35.png");
+    }
+    /********************* MEDIA QUERIES ************************** */
+    
+    @media screen and (min-width: 576px) {
+        .main-title {
+            max-height: 328px;
+        }
+    }
+    /* MD */
+    
+    @media screen and (min-width: 768px) {
+        header {
+            top: 0;
+            width: 100%;
+            position: fixed;
+            z-index: 10;
+        }
+        header:hover {
+            background-image: linear-gradient(var(--color-red), var(--color-blue));
+        }
+        header .navbar-brand {
+            margin: 0;
+            padding: 0;
+            height: 4rem;
+        }
+        .collapse {
+            background-color: initial;
+        }
+        .collapse li {
+            text-align: initial;
+            padding-right: initial;
+            border-bottom: initial;
+        }
+        .main-title {
+            margin-top: 4.7rem;
+            max-height: 429px;
+        }
+        #spiderCine p {
+            text-align: justify;
+            text-justify: distribute-all-lines;
+        }
+        #spiderCine ul {
+            margin: auto;
+            display: block;
+            width: fit-content;
+        }
+        #spiderCine ul li {
+            text-align: center;
+        }
+        .footer-nav {
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-direction: row;
+            list-style-type: none;
+            justify-content: center;
+        }
+        #amis1 {
+            width: 60%;
+            padding: 0;
+            display: block;
+            margin-left: 0;
+        }
+        #amis2 {
+            width: 65%;
+            padding: 0;
+            margin-left: 35%;
+            margin-top: -15%;
+        }
+        #lesFilles {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: center;
+            justify-content: space-evenly;
+        }
+        #lesFilles img {
+            width: 45%;
+            height: auto;
+        }
+        #adversaire .card {
+            transition: all 1s ease;
+        }
+        #adversaire .card:hover {
+            z-index: 2;
+            position: relative;
+            transform: scale(1.3);
+        }
+        #adversaire .card:hover .card-body {
+            color: white;
+            background-color: black;
+            border-radius: 0 0 2rem 2rem;
+            border-left: 0.5rem solid white;
+            border-right: 0.5rem solid white;
+            border-bottom: 0.5rem solid white;
+            box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.8);
+        }
+        .text-md-justify {
+            text-align: justify;
+            text-justify: distribute-all-lines;
+        }
+    }
+    /*LG*/
+    
+    @media screen and (min-width: 992px) {
+        .main-title {
+            max-height: 534px;
+        }
+    }
+    /* XL */
+    
+    @media screen and (min-width: 1200px) {
+        .main-title {
+            max-height: 634px;
+        }
+    }
+    /* XXL */
+    
+    @media screen and (min-width: 1400px) {
+        .main-title {
+            max-height: 700px;
+        }
+    }
